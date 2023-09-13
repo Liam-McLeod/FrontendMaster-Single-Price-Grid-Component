@@ -1,0 +1,134 @@
+:root {
+
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+
+    --default-font-family: 'Karla', sans-serif;
+    --fw-regular: 400;
+    --fw-bold: 700;
+
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font: inherit;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+
+body {
+    font-family: var(--default-font-family);
+    font-weight: var(--fw-regular);
+    display: grid;
+    place-items: center;
+    font-size: 16px;
+    height: 100vh;
+    background-color: var(--Light-Gray);
+}
+
+.main-card {
+    margin: 3rem 2rem;
+    border-radius: 0.3rem;
+    overflow: hidden;
+    --padding: 1.5rem;
+}
+
+.intro {
+    display: grid;
+    gap: 1rem;
+    background-color: white;
+    padding: var(--padding);
+}
+
+.intro-title {
+    color: var(--Cyan);
+    font-weight: var(--fw-bold);
+}
+
+.intro-subheading {
+    color: var(--Bright-Yellow);
+    font-weight: var(--fw-bold);
+}
+
+.intro-desc {
+    color: var(--Grayish-Blue);
+    line-height: 1.7;
+    font-size: 0.8rem;
+}
+
+.subscription {
+    display: grid;
+    gap: 1.3rem;
+    background-color: var(--Cyan);
+    color: white;
+    padding: var(--padding);
+}
+
+.subscription-price {
+    font-size: 1.5rem;
+    font-weight: var(--fw-bold);
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.subscription-price span {
+    font-size: 0.8rem;
+    font-weight: var(--fw-regular);
+    color: hsl(204, 43%, 93%,0.5);
+}
+
+.subscription-detail {
+    color: var(--Light-Gray);
+    margin-top: 0.3rem;
+}
+
+.subscription-btn {
+    background-color: var(--Bright-Yellow);
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.7rem;
+}
+
+.about {
+    display: grid;
+    gap: 1rem;
+    background-color: hsl(179, 62%, 43%,0.8);
+    color: white;
+    padding: var(--padding);
+}
+
+.about-list {
+    padding: 0;
+    list-style: none;
+    color: hsl(204, 43%, 93%,0.8);;
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+@media (min-width:600px) {
+    .main-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .intro {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
