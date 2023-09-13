@@ -17,8 +17,8 @@ This is a solution to the [Single price grid component challenge on Frontend Men
 
 ### Links
 
--  [Solution URL](https://www.frontendmentor.io/solutions/3-column-preview-card-component-XxyviDk9iy)
--  [Live Site URL](https://liam-mcleod.github.io/FrontendMentor-3Column-Card-Component/)
+-  [Solution URL](https://www.frontendmentor.io/solutions/single-price-grid-component-OZnQHJz-uU)
+-  [Live Site URL](https://liam-mcleod.github.io/FrontendMaster-Single-Price-Grid-Component/)
 
 ## Author
 - Frontend Mentor - [@Liam-McLeod](https://www.frontendmentor.io/profile/Liam-McLeod)
